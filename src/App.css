@@ -1,0 +1,201 @@
+/* main css */
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Cinzel Decorative',cursive;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* Common css */
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline-row {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  height: 90vh;
+  border-width: 5px;
+  border-style: double;
+  border-color: #000;
+  width: 30%;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.header {
+  background: url('https://cdn.onlinewebfonts.com/svg/img_19587.png') no-repeat;
+  background-size: 50px;
+  background-position: 84% 30%;
+  height: 120px;
+  background-color: #f9f9f9;
+}
+
+.tag {
+  font-family: 'Cabin Sketch', cursive;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  padding: 10px 5px;
+  font-size: 48px;
+  text-decoration: underline;
+  text-decoration-style: double;
+  background-color: #f9f9f9;
+}
+
+.tagline {
+  color: orangered;
+  margin: 0;
+  padding: 3px;
+
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 5px 20px;
+  font-size: 12px;
+  border: 0;
+  box-shadow: 1px 4px 5px #999;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* Listing food items */
+
+.desc{
+  text-align: left;
+  padding: 0 0 0 10px;
+  font-size: 14px;
+  width: 75%;
+}
+
+/* Order list  */
+.price {
+  font-size: 20px;
+  font-family: 'Cinzel Decorative';
+}
+.orderTotal {
+  box-shadow: 1px 4px 5px #999;
+  margin: 20px;
+}
+
+.total {
+  font-size: 20px;
+  font-family: 'Cinzel Decorative';
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+  padding: 20px 0;
+}
+
+
+/* Inventory */
+
+
+
+.option {
+  border: 0;
+  background-color: transparent;
+  font-size: 16px;
+  color: #000;
+  border-bottom: 1px solid #999;
+  margin: 0 5%;
+  outline: none;
+  font-family: 'Cinzel Decorative';
+}
+
+
+.inline img {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.inline .btn {
+  margin-left: auto;
+}
+
+.inline .btn:hover {
+  background-color: #0c9;
+  color: #fff;
+}
+
+.inline .btn[disabled]:hover {
+  background-color: tomato;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.listStyle {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin: 0 10%;
+  font-size: 18px;
+  border-bottom: 1px solid #0c9;
+  font-family: 'Cinzel Decorative';
+}
+.fish-edit {
+  box-shadow: 1px 4px 5px #999;
+  padding: 20px 0;
+  margin: 20px;
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.listView {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+.listitem {
+  padding: 10px 20px;
+  margin: 10px 2%;
+  list-style-type: none;
+  font-family: sans-serif;
+  box-shadow: 1px 4px 5px #999;
+}
+
+.text {
+  border: 0;
+  border-bottom: 1px solid #999;
+  margin: 15px 5px;
+  font-size: 16px;
+  text-transform: none;
+  width: 90%;
+  outline: none;
+  color: #000;
+  font-family: 'Cinzel Decorative';
+}
+
+
+
