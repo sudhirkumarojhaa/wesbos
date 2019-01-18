@@ -6,27 +6,27 @@ export default class Order extends React.Component{
   }
 
   renderOrder(key) {
-    const fish = this.props.fishes[key];
+    const dish = this.props.dishes[key];
     const count = this.props.order[key];
-    if(!fish || fish.status === "unavailable" ){
-      return <li key={key}> Sorry, {fish ? fish.name : 'fish'} is no longer available!</li>
+    if(!dish || dish.status === "unavailable" ){
+      return <li key={key}> Sorry, {dish ? dish.name : 'dish'} is no longer available!</li>
     }
 
     return (
       <li className="listStyle" key={key}>
-        <span className="price">{count}</span><span>{fish.name}</span>
-        <span className="price">{'\u20B9'}{fish.price}</span>
+        <span className="price">{count}</span><span>{dish.name}</span>
+        <span className="price">{'\u20B9'}{dish.price}</span>
       </li>
     )
   }
   render(){
     const orderId = Object.keys(this.props.order);
     const total = orderId.reduce((prevTotal,key)=>{
-      const fish = this.props.fishes[key];
+      const dish = this.props.dishes[key];
       const count = this.props.order[key];
-      const isAvailable = fish && fish.status === 'available';
+      const isAvailable = dish && dish.status === 'available';
       if(isAvailable) {
-        return prevTotal + (count * fish.price || 0)
+        return prevTotal + (count * dish.price || 0)
       }
       return prevTotal;
     }, 0)
